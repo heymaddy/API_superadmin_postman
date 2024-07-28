@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "dc725682-e12a-4097-bdbd-42851ee14739",
+		"name": "ITL_superuserApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29508073",
+		"_collection_link": "https://speeding-resonance-716623.postman.co/workspace/API_AUTOMATION_2025~f1cf5e56-60ec-45af-9dfd-a09579f084fe/collection/29508073-dc725682-e12a-4097-bdbd-42851ee14739?action=share&source=collection_link&creator=29508073"
+	},
+	"item": [
+		{
+			"name": "API_01_Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"applicationId\":1,\"userName\":\"superAdmin\",\"password\":\"Password@123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://superadmin.tmsitrimble.in/SuperAdmin/login/post/json/userAuthentication",
+					"protocol": "https",
+					"host": [
+						"superadmin",
+						"tmsitrimble",
+						"in"
+					],
+					"path": [
+						"SuperAdmin",
+						"login",
+						"post",
+						"json",
+						"userAuthentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API_02_SearchUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"applicationId\":2,\"userName\":\"'%234%'\",\"accountName\":null,\"transporterCode\":null,\"transporterName\":null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://superadmin.tmsitrimble.in/SuperAdmin/admin/post/json/searchUser",
+					"protocol": "https",
+					"host": [
+						"superadmin",
+						"tmsitrimble",
+						"in"
+					],
+					"path": [
+						"SuperAdmin",
+						"admin",
+						"post",
+						"json",
+						"searchUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
